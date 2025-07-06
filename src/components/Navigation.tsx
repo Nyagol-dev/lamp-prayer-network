@@ -24,13 +24,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center shadow-secondary">
-              <span className="text-primary font-bold text-xl">L</span>
-            </div>
-            <div className="text-primary-foreground">
-              <div className="font-bold text-lg">LAMP</div>
-              <div className="text-xs opacity-90">Living Altar Ministry of Prayer</div>
-            </div>
+            <img 
+              src="/lovable-uploads/f17eadce-5286-4d12-8fa3-0a7302f84491.png" 
+              alt="LAMP For Nations Logo" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

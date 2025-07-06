@@ -22,14 +22,12 @@ const Home = () => {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center animate-fade-in-up">
-            <div className="inline-flex items-center space-x-4 mb-8">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center shadow-secondary animate-float">
-                <span className="text-primary font-bold text-2xl">L</span>
-              </div>
-              <div className="text-left">
-                <h1 className="text-2xl lg:text-3xl font-bold">LAMP</h1>
-                <p className="text-lg opacity-90">Living Altar Ministry of Prayer</p>
-              </div>
+            <div className="inline-flex items-center justify-center mb-8">
+              <img 
+                src="/lovable-uploads/f17eadce-5286-4d12-8fa3-0a7302f84491.png" 
+                alt="LAMP For Nations Logo" 
+                className="h-20 w-auto animate-float"
+              />
             </div>
             
             <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-balance">
