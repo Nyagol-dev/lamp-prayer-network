@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { BookOpen, Heart, Users, Shield, Globe, GraduationCap } from "lucide-react";
 
 const Mission = () => {
   return (
@@ -118,8 +119,90 @@ const Mission = () => {
         </div>
       </section>
 
-      {/* Scripture Section */}
+      {/* Key Programmes Section */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
+              Key Programmes
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Our strategic initiatives designed to build prayer altars and transform nations through partnership in prayer.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="shadow-soft hover-scale">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <GraduationCap className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-4">School of Prayer</h3>
+                <p className="text-muted-foreground">
+                  Comprehensive training to equip believers with effective prayer strategies and spiritual warfare principles.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-soft hover-scale">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Heart className="w-8 h-8 text-secondary" />
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-4">Missions and Outreach</h3>
+                <p className="text-muted-foreground">
+                  Reaching the unreached through strategic prayer missions and community outreach initiatives.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-soft hover-scale">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Globe className="w-8 h-8 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-4">Good Morning Africa Mentorship</h3>
+                <p className="text-muted-foreground">
+                  Mentoring and developing young prayer warriors across the African continent.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-soft hover-scale">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-4">LAMP Care Initiatives</h3>
+                <p className="text-muted-foreground">
+                  Providing spiritual, emotional, and practical support to communities in need through prayer-backed action.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Keep the Fire Burning Section */}
       <section className="py-16 lg:py-24 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Card className="shadow-soft bg-secondary/5">
+            <CardContent className="p-8 lg:p-12">
+              <h3 className="text-2xl font-bold text-primary mb-6">Keep the Fire Burning</h3>
+              <blockquote className="text-xl text-muted-foreground italic leading-relaxed mb-4">
+                "The fire on the altar must be kept burning; it must not go out. Every morning the priest is to add firewood and arrange the burnt offering on the fire..."
+              </blockquote>
+              <cite className="text-secondary font-semibold">- Leviticus 6:12-13</cite>
+              <p className="text-lg text-muted-foreground mt-6">
+                Just as the ancient priests maintained the altar fire, we are committed to keeping the prayer altars burning across nations.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Scripture Section */}
+      <section className="py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Card className="shadow-soft bg-primary/5">
             <CardContent className="p-8 lg:p-12">
@@ -132,6 +215,7 @@ const Mission = () => {
           </Card>
         </div>
       </section>
+
 
       {/* Call to Action */}
       <section className="py-16 lg:py-24 hero-gradient text-primary-foreground">
