@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -161,17 +161,29 @@ const Contact = () => {
                   
                   <div className="grid grid-cols-2 gap-4">
                     <Button variant="outline" className="w-full">
+                      <Facebook className="w-4 h-4 mr-2" />
                       Facebook
                     </Button>
                     <Button variant="outline" className="w-full">
+                      <Instagram className="w-4 h-4 mr-2" />
                       Instagram
                     </Button>
                     <Button variant="outline" className="w-full">
+                      <Twitter className="w-4 h-4 mr-2" />
                       Twitter
                     </Button>
-                    <Button variant="outline" className="w-full">
-                      YouTube
+                    <Button variant="outline" className="w-full" asChild>
+                      <a href="https://www.youtube.com/@LAMPForNations" target="_blank" rel="noopener noreferrer">
+                        <Youtube className="w-4 h-4 mr-2" />
+                        YouTube
+                      </a>
                     </Button>
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
+                    <p className="text-sm text-secondary font-medium">
+                      Subscribe to our YouTube channel: Be part of the move. Raising Warriors for Christ
+                    </p>
                   </div>
                 </CardContent>
               </Card>
