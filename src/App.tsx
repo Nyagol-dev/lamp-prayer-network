@@ -11,6 +11,7 @@ import Mission from "./pages/Mission";
 import GetInvolved from "./pages/GetInvolved";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import AccessibilityButton from "@/components/AccessibilityButton";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             </Routes>
           </main>
           <Footer />
+          <AccessibilityButton />
         </div>
       </BrowserRouter>
     </TooltipProvider>
