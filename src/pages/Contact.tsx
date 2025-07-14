@@ -161,16 +161,22 @@ const Contact = () => {
                   
                   <div className="grid grid-cols-2 gap-4">
                     <Button variant="outline" className="w-full">
-                      <Facebook className="w-4 h-4 mr-2" />
+                    <a href="https://www.facebook.com/groups/lamp4nations" target="_blank" rel="noopener noreferrer">
+                       <Facebook className="w-4 h-4 mr-2" />
                       Facebook
+                    </a>
                     </Button>
                     <Button variant="outline" className="w-full">
+                    <a href="https://www.instagram.com/lamp4nations" target="_blank" rel="noopener noreferrer">
                       <Instagram className="w-4 h-4 mr-2" />
                       Instagram
+                    </a>
                     </Button>
                     <Button variant="outline" className="w-full">
+                    <a href="https://twitter.com/lamp4nations" target="_blank" rel="noopener noreferrer">
                       <Twitter className="w-4 h-4 mr-2" />
                       Twitter
+                    </a>
                     </Button>
                     <Button variant="outline" className="w-full" asChild>
                       <a href="https://www.youtube.com/@LAMPForNations" target="_blank" rel="noopener noreferrer">
