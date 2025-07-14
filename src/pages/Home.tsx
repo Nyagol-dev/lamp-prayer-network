@@ -5,6 +5,21 @@ import heroImage from "@/assets/hero-prayer-group.jpg";
 import prayingHandsIcon from "@/assets/praying-hands-icon.png";
 import globeLightIcon from "@/assets/globe-light-icon.png";
 import peopleHandsIcon from "@/assets/people-hands-icon.png";
+import ReactCountryFlag from "react-country-flag";
+
+// Array of country codes and names
+const countries = [
+  { code: 'KE', name: 'Kenya' },
+  { code: 'UG', name: 'Uganda' },
+  { code: 'BW', name: 'Botswana' },
+  { code: 'ZM', name: 'Zambia' },
+  { code: 'ZW', name: 'Zimbabwe' },
+  { code: 'ET', name: 'Ethiopia' },
+  { code: 'GH', name: 'Ghana' },
+  { code: 'GB', name: 'United Kingdom' },
+  { code: 'US', name: 'United States' },
+  { code: 'DE', name: 'Germany' }
+];
 
 const Home = () => {
   return (
@@ -102,14 +117,51 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Prayer Nations Section */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
+              We're in the following nations
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            {countries.map((country) => (
+              <div 
+                key={country.code}
+                className="flex flex-col items-center p-4 rounded-lg hover:bg-muted/50 transition-colors cursor-pointer group"
+                title={`Pray for ${country.name}`}
+              >
+                <div className="w-20 h-20 rounded-full bg-white shadow-md p-2 mb-2 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                  <ReactCountryFlag 
+                    countryCode={country.code}
+                    svg
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      borderRadius: '50%',
+                    }}
+                    title={country.code}
+                    aria-label={country.name}
+                  />
+                </div>
+                <span className="text-sm font-medium text-center">{country.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Testimonial Section */}
       <section className="py-16 lg:py-24 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-3xl lg:text-4xl font-bold text-primary mb-16">
             Lives Transformed Through Prayer
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="shadow-soft">
               <CardContent className="p-8">
                 <p className="text-muted-foreground mb-6 italic">
@@ -118,16 +170,21 @@ const Home = () => {
                 <div className="font-semibold text-primary">- Sarah M., Prayer Partner</div>
               </CardContent>
             </Card>
-            
             <Card className="shadow-soft">
               <CardContent className="p-8">
                 <p className="text-muted-foreground mb-6 italic">
-                  "The global prayer network has brought breakthrough to our community. We've witnessed revival and healing like never before."
+                  "The monthly thanksgiving services have been life-changing. Every first Sunday is now sacred as we gather to thank God for His faithfulness."
                 </p>
-                <div className="font-semibold text-primary">- Pastor David K., Ministry Partner</div>
+                <div className="font-semibold text-primary">- David K., Regular Attendant</div>
               </CardContent>
             </Card>
           </div>
+          
+          <Button asChild variant="outline" size="lg" className="mx-auto">
+            <Link to="/get-involved#sprinkles-of-his-glory">
+              Experience Sprinkles of His Glory
+            </Link>
+          </Button>
         </div>
       </section>
 

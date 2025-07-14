@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { downloadICS } from "@/utils/calendar";
 
 const GetInvolved = () => {
   const [partnerForm, setPartnerForm] = useState({ name: "", email: "" });
@@ -180,6 +181,77 @@ const GetInvolved = () => {
               <Button variant="secondary">
                 Get Started Guide
               </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Sprinkles of His Glory Section */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
+              Sprinkles of His Glory
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Join us as we dedicate each new month to God in thanksgiving and praise
+            </p>
+          </div>
+          
+          <Card className="shadow-soft max-w-2xl mx-auto">
+            <CardContent className="p-8">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-primary/10 p-4 rounded-full mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-primary">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-2">Monthly Thanksgiving Service</h3>
+                <div className="space-y-4 mb-6">
+                  <p className="text-lg">
+                    Every 1st Sunday of the Month
+                  </p>
+                  <p className="text-lg font-medium">
+                    3:00 PM - 6:00 PM
+                  </p>
+                  <p className="text-muted-foreground">
+                    KICC Shimba Hills
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 w-full">
+                  <Button 
+                    asChild 
+                    variant="outline"
+                    className="flex-1"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/place/Kenya+International+Convention+Centre/@-1.2884095,36.8218249,17z/data=!3m1!4b1!4m6!3m5!1s0x182f10d5e9f5f5b5:0x1f0a8657e9e1f8f8!8m2!3d-1.2884095!4d36.8218249!16s%2Fg%2F1trv7p4f?entry=ttu" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      Get Directions
+                    </a>
+                  </Button>
+                  <Button 
+                    onClick={downloadICS}
+                    className="flex-1 bg-primary/10 text-primary hover:bg-primary/20"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Add to Calendar
+                  </Button>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
