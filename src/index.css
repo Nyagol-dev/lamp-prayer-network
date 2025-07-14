@@ -206,3 +206,18 @@ All colors MUST be HSL for proper theming.
     @apply bg-background text-foreground;
   }
 }
+
+.high-contrast {
+  @apply bg-black text-white;
+}
+
+.high-contrast button,
+.high-contrast input,
+.high-contrast select,
+.high-contrast textarea {
+  @apply bg-gray-800 text-white border-white;
+}
+
+.high-contrast a {
+  @apply text-yellow-300;
+}
