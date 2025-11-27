@@ -175,6 +175,21 @@ All colors MUST be HSL for proper theming.
   .text-balance {
     text-wrap: balance;
   }
+
+  .high-contrast {
+    @apply bg-black text-white;
+  }
+
+  .high-contrast button,
+  .high-contrast input,
+  .high-contrast select,
+  .high-contrast textarea {
+    @apply bg-gray-800 text-white border-white;
+  }
+
+  .high-contrast a {
+    @apply text-yellow-300;
+  }
 }
 
 @keyframes fadeInUp {
@@ -205,19 +220,4 @@ All colors MUST be HSL for proper theming.
   body {
     @apply bg-background text-foreground;
   }
-}
-
-.high-contrast {
-  @apply bg-black text-white;
-}
-
-.high-contrast button,
-.high-contrast input,
-.high-contrast select,
-.high-contrast textarea {
-  @apply bg-gray-800 text-white border-white;
-}
-
-.high-contrast a {
-  @apply text-yellow-300;
 }
