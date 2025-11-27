@@ -25,7 +25,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/f17eadce-5286-4d12-8fa3-0a7302f84491.png" 
+              src="/logo/f17eadce-5286-4d12-8fa3-0a7302f84491.png" 
               alt="LAMP For Nations Logo" 
               className="h-12 w-auto"
             />

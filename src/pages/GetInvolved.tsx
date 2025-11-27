@@ -216,7 +216,7 @@ const GetInvolved = () => {
                     3:00 PM - 6:00 PM
                   </p>
                   <p className="text-muted-foreground">
-                    KICC Shimba Hills
+                    Ufungamano House.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 w-full">
@@ -226,7 +226,7 @@ const GetInvolved = () => {
                     className="flex-1"
                   >
                     <a 
-                      href="https://www.google.com/maps/place/Kenya+International+Convention+Centre/@-1.2884095,36.8218249,17z/data=!3m1!4b1!4m6!3m5!1s0x182f10d5e9f5f5b5:0x1f0a8657e9e1f8f8!8m2!3d-1.2884095!4d36.8218249!16s%2Fg%2F1trv7p4f?entry=ttu" 
+                      href="https://www.google.com/maps/place/Ufungamano+House+(Christian+Student+Leadership+Centre)/@-1.2877824,36.8214016,14z/data=!4m9!3m8!1s0x182f178f9e4a18b7:0x1a931e6c67edc9a0!5m2!4m1!1i2!8m2!3d-1.2792525!4d36.8098074!16s%2Fg%2F11fmvcv6k3?authuser=0&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2"

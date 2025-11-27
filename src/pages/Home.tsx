@@ -39,7 +39,7 @@ const Home = () => {
           <div className="text-center animate-fade-in-up">
             <div className="inline-flex items-center justify-center mb-8">
               <img 
-                src="/lovable-uploads/f17eadce-5286-4d12-8fa3-0a7302f84491.png" 
+                src="/logo/f17eadce-5286-4d12-8fa3-0a7302f84491.png" 
                 alt="LAMP For Nations Logo" 
                 className="h-20 w-auto animate-float"
               />
