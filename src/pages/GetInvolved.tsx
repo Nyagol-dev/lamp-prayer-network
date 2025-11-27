@@ -1,34 +1,15 @@
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
 import { downloadICS } from "@/utils/calendar";
 
 const GetInvolved = () => {
-  const [partnerForm, setPartnerForm] = useState({ name: "", email: "" });
-  const [prayerRequest, setPrayerRequest] = useState({ name: "", email: "", request: "" });
-  const { toast } = useToast();
 
-  const handlePartnerSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Thank you for joining!",
-      description: "We'll send you prayer updates and opportunities soon.",
-    });
-    setPartnerForm({ name: "", email: "" });
-  };
 
-  const handlePrayerSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Prayer request submitted",
-      description: "Your request will be lifted up by our prayer team.",
-    });
-    setPrayerRequest({ name: "", email: "", request: "" });
-  };
+
+
+
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
@@ -62,30 +43,17 @@ const GetInvolved = () => {
                   Join our global network of prayer warriors and receive regular updates with specific prayer points for nations and urgent needs.
                 </p>
                 
-                <form onSubmit={handlePartnerSubmit} className="space-y-4">
-                  <div>
-                    <Label htmlFor="partner-name">Full Name</Label>
-                    <Input
-                      id="partner-name"
-                      value={partnerForm.name}
-                      onChange={(e) => setPartnerForm({ ...partnerForm, name: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="partner-email">Email Address</Label>
-                    <Input
-                      id="partner-email"
-                      type="email"
-                      value={partnerForm.email}
-                      onChange={(e) => setPartnerForm({ ...partnerForm, email: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <Button type="submit" className="w-full">
-                    Join as Prayer Partner
-                  </Button>
-                </form>
+                <iframe 
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSfwqxG-VxRfvFq_ylDm2cwxbSjJHhCblA35aasEEfbKssF5cA/viewform?embedded=true" 
+                  width="100%" 
+                  height="1193" 
+                  frameBorder="0" 
+                  marginHeight={0} 
+                  marginWidth={0}
+                  title="Prayer Partner Form"
+                >
+                  Loading…
+                </iframe>
               </CardContent>
             </Card>
 
@@ -101,38 +69,17 @@ const GetInvolved = () => {
                   Share your prayer needs with our dedicated prayer team. All requests are kept confidential and lifted up in prayer.
                 </p>
                 
-                <form onSubmit={handlePrayerSubmit} className="space-y-4">
-                  <div>
-                    <Label htmlFor="request-name">Name (Optional)</Label>
-                    <Input
-                      id="request-name"
-                      value={prayerRequest.name}
-                      onChange={(e) => setPrayerRequest({ ...prayerRequest, name: e.target.value })}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="request-email">Email (Optional)</Label>
-                    <Input
-                      id="request-email"
-                      type="email"
-                      value={prayerRequest.email}
-                      onChange={(e) => setPrayerRequest({ ...prayerRequest, email: e.target.value })}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="request-text">Prayer Request</Label>
-                    <Textarea
-                      id="request-text"
-                      value={prayerRequest.request}
-                      onChange={(e) => setPrayerRequest({ ...prayerRequest, request: e.target.value })}
-                      required
-                      rows={4}
-                    />
-                  </div>
-                  <Button type="submit" className="w-full">
-                    Submit Prayer Request
-                  </Button>
-                </form>
+                <iframe 
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSc2iw1i0ujTJh-GvAye0yIKOXNSrddXCPFZ-0GRmhV5RHBH0A/viewform?embedded=true" 
+                  width="100%" 
+                  height="903" 
+                  frameBorder="0" 
+                  marginHeight={0} 
+                  marginWidth={0}
+                  title="Prayer Request Form"
+                >
+                  Loading…
+                </iframe>
               </CardContent>
             </Card>
           </div>
