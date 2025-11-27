@@ -4,13 +4,6 @@ import { downloadICS } from "@/utils/calendar";
 
 const GetInvolved = () => {
 
-
-
-
-
-
-
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
       {/* Hero Section */}
