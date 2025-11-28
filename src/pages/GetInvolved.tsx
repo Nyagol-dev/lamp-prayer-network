@@ -25,7 +25,7 @@ const GetInvolved = () => {
           
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Prayer Partner Signup */}
-            <Card className="shadow-soft">
+            <Card className="shadow-soft" id="prayer-partner">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-primary">
                   Become a Prayer Partner

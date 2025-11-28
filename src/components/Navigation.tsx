@@ -49,7 +49,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Button variant="secondary" size="sm" asChild>
-              <Link to="/get-involved">Join Us</Link>
+              <Link to="/get-involved#prayer-partner">Join Us</Link>
             </Button>
           </div>
 
@@ -85,7 +85,7 @@ const Navigation = () => {
               ))}
               <div className="px-3 py-2">
                 <Button variant="secondary" size="sm" asChild className="w-full">
-                  <Link to="/get-involved" onClick={() => setIsOpen(false)}>
+                  <Link to="/get-involved#prayer-partner" onClick={() => setIsOpen(false)}>
                     Join Us
                   </Link>
                 </Button>

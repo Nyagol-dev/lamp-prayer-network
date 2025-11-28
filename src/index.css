@@ -20,24 +20,24 @@ All colors MUST be HSL for proper theming.
     --popover: 0 0% 100%;
     --popover-foreground: 220 85% 15%;
 
-    /* LAMP Primary - Purple from logo for trust and divine wisdom */
-    --primary: 275 65% 35%;
+    /* LAMP Primary - Deep Purple from Color Hunt */
+    --primary: 275 82% 34%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 275 65% 45%;
-    --primary-dark: 275 65% 25%;
+    --primary-light: 275 82% 44%;
+    --primary-dark: 275 82% 24%;
 
-    /* LAMP Secondary - Red from logo for divine power */
-    --secondary: 0 75% 55%;
+    /* LAMP Secondary - Vibrant Red from Color Hunt */
+    --secondary: 0 88% 46%;
     --secondary-foreground: 0 0% 98%;
-    --secondary-light: 0 75% 65%;
-    --secondary-dark: 0 75% 45%;
+    --secondary-light: 0 88% 56%;
+    --secondary-dark: 0 88% 36%;
 
-    /* Muted colors */
-    --muted: 220 15% 95%;
+    /* Muted colors - Peach from Color Hunt */
+    --muted: 32 100% 86%;
     --muted-foreground: 220 25% 45%;
 
-    /* Accent colors */
-    --accent: 0 75% 55%;
+    /* Accent colors - Orange from Color Hunt */
+    --accent: 10 99% 63%;
     --accent-foreground: 0 0% 98%;
 
     /* Destructive colors */
@@ -50,14 +50,14 @@ All colors MUST be HSL for proper theming.
     --ring: 220 85% 25%;
 
     /* Custom LAMP gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(275 65% 35%), hsl(275 65% 45%));
-    --gradient-secondary: linear-gradient(135deg, hsl(0 75% 55%), hsl(0 75% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(275 65% 35%), hsl(275 65% 25%));
-    --gradient-light: linear-gradient(180deg, hsl(0 0% 98%), hsl(275 15% 95%));
+    --gradient-primary: linear-gradient(135deg, hsl(275 82% 34%), hsl(275 82% 44%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 88% 46%), hsl(0 88% 56%));
+    --gradient-hero: linear-gradient(135deg, hsl(275 82% 34%), hsl(275 82% 24%));
+    --gradient-light: linear-gradient(180deg, hsl(0 0% 98%), hsl(32 100% 95%));
 
     /* Shadows with primary color */
-    --shadow-primary: 0 10px 30px -10px hsl(275 65% 35% / 0.3);
-    --shadow-secondary: 0 10px 30px -10px hsl(0 75% 55% / 0.2);
+    --shadow-primary: 0 10px 30px -10px hsl(275 82% 34% / 0.3);
+    --shadow-secondary: 0 10px 30px -10px hsl(0 88% 46% / 0.2);
     --shadow-soft: 0 4px 20px -4px hsl(220 25% 25% / 0.1);
 
     /* Animation variables */
