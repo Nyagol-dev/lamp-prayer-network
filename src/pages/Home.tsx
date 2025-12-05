@@ -65,7 +65,8 @@ const Home = () => {
             Welcome to LAMP
           </h3>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Welcome to the Living Altar Ministry of Prayer (LAMP), a global community dedicated to raising up vibrant prayer altars for individuals, communities, and nations. We are founded on the belief that persistent, faith-filled prayer has the power to transform lives, heal lands, and shape the destiny of nations. We invite you to partner with us as we answer the call to become a shining light to the nations.
+            Welcome to the Living Altar Ministry of Prayer (LAMP), a global community dedicated to raising up vibrant prayer altars for individuals, communities, and nations.
+            We are founded on the belief that persistent, faith-filled prayer has the power to transform lives, heal lands, and shape the destiny of nations. We invite you to partner with us as we answer the call to become a shining light to the nations.
           </p>
         </div>
       </section>
@@ -154,37 +155,142 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
+      {/* About LAMP Section */}
       <section className="py-16 lg:py-24 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-3xl lg:text-4xl font-bold text-primary mb-16">
-            Lives Transformed Through Prayer
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-16">
+            About LAMP
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="shadow-soft">
+          <Card className="shadow-soft mb-12">
+            <CardContent className="p-8 lg:p-12">
+              <h4 className="text-2xl font-bold text-primary mb-6">Our Mission</h4>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                To establish and nurture a global network of living prayer altars, empowering believers from all walks of life to partner in fervent intercession for the spiritual transformation of nations.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-soft mb-12">
+            <CardContent className="p-8 lg:p-12">
+              <h4 className="text-2xl font-bold text-primary mb-6">Our Vision</h4>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We envision a world where every nation is saturated by the power of prayer, bringing the light of the Gospel, tangible hope, and widespread revival to all corners of the earth.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-soft mb-12">
+            <CardContent className="p-8 lg:p-12">
+              <h4 className="text-2xl font-bold text-primary mb-6">Our Calling</h4>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                LAMP was born from a deep conviction that prayer is the most powerful force for transformation in the world. We are called to be intercessors who stand in the gap for nations, communities, and individuals who need the touch of God.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Our calling is rooted in Isaiah 49:6: "I will also make you a light for the Gentiles, that my salvation may reach to the ends of the earth." We believe that through unified prayer, we can be that light that illuminates the darkness in every nation.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                As we partner together in prayer, we become living altars - holy places where heaven and earth meet, where God's will is declared over the nations, and where His kingdom comes with power and demonstration.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Leadership Team Section */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-16">
+            Our Leadership Team
+          </h3>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="text-center shadow-soft">
               <CardContent className="p-8">
-                <p className="text-muted-foreground mb-6 italic">
-                  "LAMP has transformed my prayer life and connected me with believers worldwide. I've seen God move in miraculous ways through our united intercession."
+                <div className="w-24 h-24 bg-secondary/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">MF</span>
+                </div>
+                <h4 className="text-xl font-bold text-primary mb-2">Ministry Founder</h4>
+                <p className="text-muted-foreground mb-4">Lead Pastor & Visionary</p>
+                <p className="text-sm text-muted-foreground">
+                  Called to prayer ministry with a heart for the nations and a vision for global revival through intercession.
                 </p>
-                <div className="font-semibold text-primary">- Sarah M., Prayer Partner</div>
               </CardContent>
             </Card>
-            <Card className="shadow-soft">
+
+            <Card className="text-center shadow-soft">
               <CardContent className="p-8">
-                <p className="text-muted-foreground mb-6 italic">
-                  "The monthly thanksgiving services have been life-changing. Every first Sunday is now sacred as we gather to thank God for His faithfulness."
+                <div className="w-24 h-24 bg-secondary/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">IC</span>
+                </div>
+                <h4 className="text-xl font-bold text-primary mb-2">Intercession Coordinator</h4>
+                <p className="text-muted-foreground mb-4">Prayer Network Leader</p>
+                <p className="text-sm text-muted-foreground">
+                  Passionate about mobilizing believers for strategic intercession and building prayer networks globally.
                 </p>
-                <div className="font-semibold text-primary">- David K., Regular Attendant</div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-soft">
+              <CardContent className="p-8">
+                <div className="w-24 h-24 bg-secondary/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">OD</span>
+                </div>
+                <h4 className="text-xl font-bold text-primary mb-2">Outreach Director</h4>
+                <p className="text-muted-foreground mb-4">Global Partnerships</p>
+                <p className="text-sm text-muted-foreground">
+                  Focuses on building relationships with ministries and churches worldwide to expand the prayer movement.
+                </p>
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Core Values Section */}
+      <section className="py-16 lg:py-24 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-16">
+            Our Core Values
+          </h3>
           
-          <Button asChild variant="outline" size="lg" className="mx-auto">
-            <Link to="/get-involved#sprinkles-of-his-glory">
-              Experience Sprinkles of His Glory
-            </Link>
-          </Button>
+          <div className="space-y-8">
+            <Card className="shadow-soft">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-primary mb-4">Faith in Prayer</h4>
+                <p className="text-muted-foreground">
+                  We believe in the power of prayer to change circumstances, transform lives, and impact nations according to God's will.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-soft">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-primary mb-4">Unity in Diversity</h4>
+                <p className="text-muted-foreground">
+                  We celebrate the diversity of the global Body of Christ while maintaining unity in our common purpose of prayer and intercession.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-soft">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-primary mb-4">Persistent Intercession</h4>
+                <p className="text-muted-foreground">
+                  We are committed to persistent, consistent prayer that doesn't give up until we see breakthrough and transformation.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-soft">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-primary mb-4">Global Vision</h4>
+                <p className="text-muted-foreground">
+                  Our heart beats for every nation, people group, and individual to experience the transforming power of God through prayer.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -202,7 +308,7 @@ const Home = () => {
               <Link to="/get-involved">Get Involved</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Link to="/about">Learn More</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
         </div>

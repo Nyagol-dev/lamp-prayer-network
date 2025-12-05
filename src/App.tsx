@@ -9,7 +9,6 @@ import Footer from "@/components/Footer";
 import AccessibilityButton from "@/components/AccessibilityButton";
 
 const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
 const Mission = lazy(() => import("./pages/Mission"));
 const GetInvolved = lazy(() => import("./pages/GetInvolved"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -29,7 +28,6 @@ const App = () => (
             <Suspense fallback={<div className="flex items-center justify-center min-h-[50vh]">Loading...</div>}>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
                 <Route path="/mission" element={<Mission />} />
                 <Route path="/get-involved" element={<GetInvolved />} />
                 <Route path="/contact" element={<Contact />} />

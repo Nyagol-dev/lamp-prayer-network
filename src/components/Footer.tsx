@@ -29,11 +29,6 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/about" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
-                  About Us
-                </Link>
-              </li>
-              <li>
                 <Link to="/mission" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Our Mission
                 </Link>
