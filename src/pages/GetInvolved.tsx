@@ -159,43 +159,7 @@ const GetInvolved = () => {
                   Join our global network of prayer warriors and receive regular updates with specific prayer points for nations and urgent needs.
                 </p>
                 
-                <iframe 
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSfwqxG-VxRfvFq_ylDm2cwxbSjJHhCblA35aasEEfbKssF5cA/viewform?embedded=true" 
-                  width="100%" 
-                  height="1193" 
-                  frameBorder="0" 
-                  marginHeight={0} 
-                  marginWidth={0}
-                  title="Prayer Partner Form"
-                >
-                  Loading…
-                </iframe>
-              </CardContent>
-            </Card>
-
-            {/* Prayer Request Form */}
-            <Card className="shadow-soft">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-primary">
-                  Submit a Prayer Request
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-muted-foreground">
-                  Share your prayer needs with our dedicated prayer team. All requests are kept confidential and lifted up in prayer.
-                </p>
-                
-                <iframe 
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSc2iw1i0ujTJh-GvAye0yIKOXNSrddXCPFZ-0GRmhV5RHBH0A/viewform?embedded=true" 
-                  width="100%" 
-                  height="903" 
-                  frameBorder="0" 
-                  marginHeight={0} 
-                  marginWidth={0}
-                  title="Prayer Request Form"
-                >
-                  Loading…
-                </iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHzXegzDjOxEMDq0amzkMGe18rmuOdV9PpUGCaJdk5xrdpiw/viewform?embedded=true" width="640" height="1037" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
               </CardContent>
             </Card>
           </div>
