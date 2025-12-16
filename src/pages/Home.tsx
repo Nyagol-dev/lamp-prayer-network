@@ -65,8 +65,8 @@ const Home = () => {
             Welcome to LAMP
           </h3>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Welcome to the Living Altar Ministry of Prayer (LAMP), a global community dedicated to raising up vibrant prayer altars for individuals, communities, and nations.
-            We are founded on the belief that persistent, faith-filled prayer has the power to transform lives, heal lands, and shape the destiny of nations. We invite you to partner with us as we answer the call to become a shining light to the nations.
+            Welcome to the Living Altar Ministry of Prayer (LAMP), 
+            Living Altar Ministry of Prayer(LAMP) for Nations is an interdenominational Christian Organization committed to advancing the kingdom of God by awakening and equipping the Church in the ministry of prayer and intercession
           </p>
         </div>
       </section>
