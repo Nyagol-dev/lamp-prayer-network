@@ -27,7 +27,8 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHzXegzDjOxEMDq0amzkMGe18rmuOdV9PpUGCaJdk5xrdpiw/viewform?embedded=true" width="640" height="1037" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHzXegzDjOxEMDq0amzkMGe18rmuOdV9PpUGCaJdk5xrdpiw/viewform?embedded=true" 
+                  width="100%" height="1399"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
               </CardContent>
             </Card>
 
